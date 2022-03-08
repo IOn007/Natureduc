@@ -37,7 +37,6 @@ body {
 
 /* Offre de services
 -------------------------------------------------- */
-
 .service .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -50,6 +49,26 @@ body {
   margin-left: .75rem;
 }
 
+/* Thématiques
+------------------------- */
+.focus-divider {
+  margin: 5rem 0;  
+}
+.focus-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+.focus-img {
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+
+      
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -58,5 +77,11 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .focus-img-lg {
+    font-size: 3.5rem;
   }
 }
