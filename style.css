@@ -1,0 +1,36 @@
+/* MES STYLES
+-------------------------------------------------- */
+
+/* Global
+-------------------------------------------------- */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+#homeTitle {
+  visibility: hidden;
+  padding: 0;
+  height: 0;
+}
+
+/* Carrousel
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 24rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+} 
