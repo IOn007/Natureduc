@@ -1,6 +1,6 @@
 # HTML éval d'entrainement - NOTES #
 
-## Enoncé 🔍 ## 
+## Enoncé 🔍 ##
 
 Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité (c’est
 à vous de choisir une association, qu’elle soit réelle ou fictive, l’important sera votre code).
