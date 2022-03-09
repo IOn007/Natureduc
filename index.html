@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natur'educ | Sensibilisation du jeune public à l'environnement en milieu scolaire</title>
+  <title>Natur'educ | Association fictive de sensibilisation du jeune public à l'environnement en milieu scolaire</title>
   <meta name="description" content="Natur'educ, l'association qui transporte la classe à la découverte de la nature. Du 18 au 22 mai 2022, à l'occasion de la Fête de la Nature, planifiez une intervention dans votre école.">
   <!-- Import du style Bootstrap 5.1 via cdn -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  <!-- Lien vers mon style custom -->
@@ -18,12 +18,23 @@
 <body>
   <!-- Import d'icones SVG -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- calendrier -->
     <symbol id="calendar3" viewBox="0 0 16 16">
       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
       <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
     </symbol>
+    <!-- Geo pointer -->
     <symbol id="geo-fill" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"></path>
+    </symbol>
+      <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z"/>
+    <!-- Outils -->
+    <symbol id="bi-tools" viewBox="0 0 16 16">
+      <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+    </symbol>
+    <!-- Règles -->
+    <symbol id="bi-rulers" viewBox="0 0 16 16">
+      <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z"/>
     </symbol>
   </svg>
 
@@ -166,7 +177,9 @@
 
         <!-- Service : rayonnement national -->
         <div class="col-lg-4">
-          <svg class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em" fill="#777"><use xlink:href="#geo-fill"></use></svg>
+          </div>
           <h2>Un réseau national</h2>
           <p>Nos équipes interviennent partout en France métropole et Outre-mer</p>
           <p><a class="btn btn-secondary" href="#">Découvrir »</a></p>
@@ -174,7 +187,9 @@
         
         <!-- Service : Ressources-->
         <div class="col-lg-4">
-          <svg class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em" fill="#777"><use xlink:href="#bi-tools"></use></svg>
+          </div>
           <h2>Des ressources pédagogiques</h2>
           <p>Découvrez les livrets, les quizz et les jeux mis à votre disposition</p>
           <p><a class="btn btn-secondary" href="#">Découvrir »</a></p>
@@ -182,55 +197,59 @@
         
         <!-- Service : Accompagnement projet -->
         <div class="col-lg-4">
-          <svg class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <h2>Des projets sur mesure</h2>
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em" fill="#777"><use xlink:href="#bi-rulers"></use></svg>
+          </div>            
+          <h2>Des projets sur mesure</h2>
           <p>Vous avez un projet de classe ? Nous vous accompagnons dans la réalisation de votre projet au sein de votre établissement</p>
           <p><a class="btn btn-secondary" href="#">Découvrir »</a></p>
         </div>
       </div>
-      <!-- Focus thématique -->
-      <hr class="focus-divider">
-      
+    </div>
+
+    <!-- Focus thématique --> 
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Les grands dossiers</h2>
       <!-- Les forêts -->
-      <div class="row focus">
+      <div class="py-5 row focus">
         <div class="col-md-7">
           <h2 class="focus-heading">Les forêts | <span class="text-muted">Les pouvoirs des arbres.</span></h2>
           <p class="lead">Les arbres jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
         </div>
         <div class="col-md-5">
-          <svg class="focus-img focus-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+          <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
         </div>
       </div>
-      <hr class="focus-divider">
 
       <!-- Les mares-->
-      <div class="row focus">
+      <div class="py-5 row focus">
         <div class="col-md-7 order-md-2">
           <h2 class="focus-heading">Les mares | <span class="text-muted">Extraordinaires ecosystèmes.</span></h2>
           <p class="lead">Les mares jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="focus-img focus-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+          <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
         </div>
       </div>
-      <hr class="focus-divider">
 
       <!-- Les océans-->
-      <div class="row focus">
+      <div class="py-5 row focus">
         <div class="col-md-7">
           <h2 class="focus-heading">Les océans| <span class="text-muted">Les pouvoirs des océans.</span></h2>
           <p class="lead">Les océans jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
         </div>
         <div class="col-md-5">
-          <svg class="focus-img focus-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+          <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
         </div>
       </div>
+    </div>
 
       <!-- Agenda -->
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Agenda</h2>
-    
+      <div class="container px-4 py-5" id="agenda-cards">
+        <h2 class="pb-2 border-bottom">Agenda</h2>  
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+          <!-- Agenda Journée internationale des forêts -->
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/jif_foret.png');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -252,6 +271,7 @@
             </div>
           </div>
     
+          <!-- Agenda Journée mondiale de l'eau -->
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/WorldWaterDay2022.webp');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -272,7 +292,8 @@
               </div>
             </div>
           </div>
-    
+          
+          <!-- Agenda La Fête de la Nature -->
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/fdn2022.png');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -295,12 +316,11 @@
           </div>
         </div>
       </div>
-      <!-- Partenaires-->
-    </div>
-  </main>
-
+     
   <!-- Pied de page -->
-  <footer>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2022 Natur'éduc, Inc. · <a href="#">Mentions légales</a> · <a href="contact.html">Nous contacter</a></p>
   </footer>
 
   <!-- Import de Bootstrap JS et Popper bundle-->
