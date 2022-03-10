@@ -1,21 +1,30 @@
-@charset "UTF-8";
 /* MES STYLES
 -------------------------------------------------- */
+$color-blue: #00c8ce;
+$color-green: #7ac15e;
+$color-brown: #996633;
+$color-yellow: #efc92e;
+$color-orange: #ff8339;
+$color-red: #ff5050;
+$color-title: #00c8ce;
+$color-font: #5a5a5a;
+
+$font-text :'League Spartan', sans-serif; 
+$font-title: 'Luckiest Guy', cursive;
+
 /* Global
 -------------------------------------------------- */
 body {
   /* padding-top: 3rem;
   padding-bottom: 3rem; */
-  color: #5a5a5a;
-  font-family: "League Spartan", sans-serif;
-}
-
+  color: $color-font;
+  font-family: $font-text;
+ }
 #homeTitle {
   visibility: hidden;
   padding: 0;
   height: 0;
 }
-
 /* Page title feature
 -------------------------------------------------- */
 /* Carrousel
@@ -23,23 +32,20 @@ body {
 .carousel {
   margin-bottom: 4rem;
 }
-
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-
 .carousel-item {
   height: 24rem;
 }
-
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 32rem;
-}
+} 
 
 /* Offre de services
 -------------------------------------------------- */
@@ -47,11 +53,9 @@ body {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-
 .service h2 {
   font-weight: 400;
 }
-
 .service .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
@@ -64,28 +68,19 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
 .focus-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
 }
-
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
-
-.rounded-5 {
-  border-radius: 1rem;
-}
-
-.text-shadow {
-  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
-}
+.rounded-5 { border-radius: 1rem; }
+.text-shadow { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
 
 .card-cover {
   background-repeat: no-repeat;
@@ -94,8 +89,10 @@ body {
 }
 
 /* footer */
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
 @media (min-width: 40em) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
@@ -109,4 +106,3 @@ body {
     font-size: 3.5rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
