@@ -20,18 +20,23 @@ rouge = #ff5050
 
 ## Fonts ##
 
-### Titres : Luckiest Guy (Google font) ###
+### Titres : Fredoka (Google font) ###
 
 ### Textes : League Spartan (Google font) ###
 
-- HTML : <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
-
-- CSS :
-  font-family: 'League Spartan', sans-serif;
-  font-family: 'Luckiest Guy', cursive;
-
 ## Style ##
 
+- h1 > Bannière couleur de la page
+
+- h2 > Couleur de la page
+
+- h3 > Gris bicolore
+
+- Paragraphe
+  - Texte gris
+
+- Bouton et liens 
+  - Boutons et liens bleus et vers au survol.
+
 ## Icones ##
+Reprises de Bootstrap
