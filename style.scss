@@ -97,6 +97,7 @@ a {
     border-color: $color-green;
   }
 }
+
 /* Titres h2 par page
 -------------------------------------------------- */ 
 .accueil, .contact {
@@ -115,52 +116,54 @@ a {
 -------------------------------------------------- */
 .carousel {
   margin-bottom: 4rem;
-}
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-.carousel-item {
-  height: 24rem;
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  } 
-  
   .btn-primary {
     background-color: rgba(255, 255, 255, 0.123);
     border-color: white;
     color: white;
   }
-}
 
+  &-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  &-item {
+    height: 24rem;
 
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 32rem;
+    } 
+  }
+}  
+  
 /* Offre de services
 -------------------------------------------------- */
-.service .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-
-  p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-}
 .service  {
 
   h2{
   font-weight: 400;  
   color: $color-blue;
   font-family: $font-title;
-  }  
+  } 
+
+  .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  
+    p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+  }
+  
 }
 
 
-/* Thématiques
+/* Thématiques focus
 ------------------------- */
 .focus-heading {
   font-weight: 300;

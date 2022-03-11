@@ -33,7 +33,7 @@ rouge = #ff5050
 - h3 > Gris bicolore
 
 - Paragraphe
-  - Texte gris
+  - Texte gris #5a5a5a
 
 - Bouton et liens 
   - Boutons et liens bleus et vers au survol.
