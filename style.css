@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* MES STYLES
+-------------------------------------------------- */
+:root {
+  --bs-primary: #7ac15e;
+  --bs-secondary: #007D83;
+}
+
+/* Global
+-------------------------------------------------- */
+body {
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
+  color: #5a5a5a;
+  font-family: "League Spartan", sans-serif;
+}
+
+header h2 {
+  color: white;
+}
+
+header .dropdown-item:active {
+  background-color: #7ac15e;
+}
+
+header .presentation:hover {
+  background-color: #7ac15e;
+  color: white;
+  font-weight: 700;
+}
+
+header .accueil:hover, header .contact:hover {
+  background-color: #007D83;
+  color: white;
+  font-weight: 700;
+}
+
+header .presentation:hover, header .faq:hover {
+  background-color: #7ac15e;
+  color: white;
+  font-weight: 700;
+}
+
+header .feteNature:hover {
+  background-color: #ff8339;
+  color: white;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  font-family: "Fredoka", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #007D83;
+}
+
+a:hover {
+  color: #7ac15e;
+}
+
+img.center-cropped {
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Do not scale the image */
+  -o-object-position: center;
+     object-position: center;
+  /* Center the image within the element */
+  height: 100px;
+  width: 100px;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* Composants
+-------------------------------------------------- */
+.btn-primary {
+  background-color: #007D83;
+  border-color: #007D83;
+}
+
+.btn-primary:hover {
+  background-color: #7ac15e;
+  border-color: #7ac15e;
+}
+
+/* Titres h2 par page
+-------------------------------------------------- */
+.accueil, .contact {
+  color: #007D83;
+}
+
+.presentation, .faq {
+  color: #7ac15e;
+}
+
+.feteNature {
+  color: #ff8339;
+}
+
+/* Carrousel
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel .btn-primary {
+  background-color: rgba(255, 255, 255, 0.123);
+  border-color: white;
+  color: white;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 24rem;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* Offre de services
+-------------------------------------------------- */
+.service h2 {
+  font-weight: 400;
+  color: #007D83;
+  font-family: "Fredoka", sans-serif;
+}
+
+.service .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Thématiques focus
+------------------------- */
+.focus-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.focus-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: #007D83;
+}
+
+.rounded-5 {
+  border-radius: 1rem;
+}
+
+.text-shadow {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* footer */
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .focus-img-lg {
+    font-size: 3.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

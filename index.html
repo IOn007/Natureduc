@@ -1,12 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Natur'educ | Association fictive de sensibilisation du jeune public à l'environnement en milieu scolaire</title>
+  <meta name="description" content="Natur'educ, l'association qui transporte la classe à la découverte de la nature. Du 18 au 22 mai 2022, à l'occasion de la Fête de la Nature, planifiez une intervention dans votre école.">
+  <!-- Import du style Bootstrap 5.1 via cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  <!-- Lien vers mon style custom -->
+  <!-- Import style custom -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Import Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Fredoka&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicon-16x16.png" sizes="git 16x16" type="image/png">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Import d'icones SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- calendrier -->
+    <symbol id="calendar3" viewBox="0 0 16 16">
+      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+    </symbol>
+    <!-- Geo pointer -->
+    <symbol id="geo-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"></path>
+    </symbol>
+    <!-- Outils -->
+    <symbol id="bi-tools" viewBox="0 0 16 16">
+      <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+    </symbol>
+    <!-- Règles -->
+    <symbol id="bi-rulers" viewBox="0 0 16 16">
+      <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z"/>
+    </symbol>
+    <!-- Flèche retour vers le haut -->
+    <symbol id="bi-arrow-bar-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+    </symbol>
+  </svg>
+
+  <!-- En-tête de la page d'accueil -->
+  <header>
+    <!-- Barre de navigation, qui s'étend à partir des écrans de 768px, fixe lors du déroulé vers le bas de page -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+
+        <!-- Lien vers la page d'accueil  -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Logo-natureduc.svg" alt="Natur'educ page d'accueil" width="30" height="30">
+          Natur'educ
+        </a>
+
+        <!-- Bouton pour dérouler le menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <!-- Ajout d'affordance pour la page actuelle avec active -->
+              <a class="nav-link active accueil" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle presentation" href="presentation.html" id="prezNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Présentation
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="prezNavbarDropdown">
+                <li><a class="dropdown-item" href="presentation.html#Mission">La mission</a></li>
+                <li><a class="dropdown-item" href="presentation.html#Equipe">L'équipe</a></li>
+                <li><a class="dropdown-item" href="presentation.html#Partenaires">Les partenaires</a></li>
+                <li><a class="dropdown-item" href="presentation.html#Temoignages">Témoignages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle feteNature" href="fete-de-la-nature.html" id="fdnNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                La Fête de la Nature
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fdnNavbarDropdown">
+                <li><a class="dropdown-item" href="fete-de-la-nature.html#Programme">Le programme</a></li>
+                <li><a class="dropdown-item" href="fete-de-la-nature.html#Actions">Nos actions</a></li>
+                <li><a class="dropdown-item" href="fete-de-la-nature.html#Interventions">Intervenir dans votre école</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link faq" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="socials">
+            <!-- TODO ici les liens vers les comptes sociaux -->
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Titre de la page d'accueil masqué (pour référencement) -->
+    <h1 class="screen-reader-text">Association fictive de sensibilisation du jeune public à l'environnement en milieu scolaire</h1>
+  </header>
+
+  <!-- Contenu spécifique de la page -->
+  <main>
+    <!-- Bannière carrousel -->
+    <div id="banniere" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#banniere" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#banniere" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#banniere" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide Sensi nature - mission -->
+        <div class="carousel-item">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#7ac15e"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>La nature et nous</h2>
+              <p>Natur'éduc intervient de la maternelle au lycée pour sensibiliser les jeunes au développement durable et à la nature</p>
+              <p><a class="btn btn-lg btn-primary" href="presentation.html#Mission">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide Fete de la nature -->
+        <div class="carousel-item active">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007D83"></rect></svg>  
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>La Fête de la Nature, édition 2022</h2>
+              <p>Nos équipes interviennent dans les établissements scolaires à l'occasion de la Fête de la Nature pour sensibiliser de manière ludique et festive.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="fete-de-la-nature.html#Actions">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Projet école -->
+        <div class="carousel-item">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#996633"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Vous avez un projet d'éco-sensibilisation ?</h2>
+              <p>Natur'éduc vous accompagne dans votre projet avec des outils et un programme personnalisable</p>
+              <p><a class="btn btn-lg btn-primary" href="fete-de-la-nature.html#Interventions">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>            
+      </div>
+
+      <!-- Contrôles avant / après -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#banniere" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précedent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#banniere" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+
+    <!-- Offre de services-->
+    <div class="container service" id="Services">      
+      <div class="row">
+        <!-- Service : rayonnement national -->
+        <div class="col-lg-4">
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em"><use xlink:href="#geo-fill"></use></svg>
+          </div>
+          <h2>Un réseau national</h2>
+          <p>Nos équipes interviennent partout en France métropole et Outre-mer</p>
+          <p><a class="btn btn-outline-secondary" href="presentation.html#Equipe">Découvrir »</a></p>
+        </div>
+        
+        <!-- Service : Ressources-->
+        <div class="col-lg-4">
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em"><use xlink:href="#bi-tools"></use></svg>
+          </div>
+          <h2>Des ressources pédagogiques</h2>
+          <p>Découvrez les livrets, les quizz et les jeux mis à votre disposition</p>
+          <p><a class="btn btn-outline-secondary" href="fete-de-la-nature.html#Actions">Découvrir »</a></p>
+        </div>
+        
+        <!-- Service : Accompagnement projet -->
+        <div class="col-lg-4">
+          <div class="rounded-circle" width="140" height="140">
+            <svg class="bi me-2" width="3em" height="3em"><use xlink:href="#bi-rulers"></use></svg>
+          </div>            
+          <h2>Des projets sur mesure</h2>
+          <p>Vous avez un projet de classe ? Nous vous accompagnons dans la réalisation de votre projet au sein de votre établissement</p>
+          <p><a class="btn btn-outline-secondary" href="fete-de-la-nature.html#Interventions">Découvrir »</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Focus thématique --> 
+    <div class="container px-4 py-5" id="Dossiers">
+      <h2 class="pb-2 border-bottom text-center accueil">Les grands dossiers</h2>
+      <!-- Les forêts -->
+      <div class="py-5 row focus">
+        <div class="col-md-7">
+          <h3 class="focus-heading">Les forêts | <span class="text-muted">Les pouvoirs des arbres</span></h3>
+          <p class="lead">Les arbres jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/foret.jpg" alt="foret">  
+        </div>
+      </div>
+
+      <!-- Les mares-->
+      <div class="py-5 row focus">
+        <div class="col-md-7 order-md-2">
+          <h3 class="focus-heading">Les mares | <span class="text-muted">Extraordinaires ecosystèmes</span></h3>
+          <p class="lead">Les mares jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/mare.jpg" alt="mare">  
+        </div>
+      </div>
+
+      <!-- Les océans-->
+      <div class="py-5 row focus">
+        <div class="col-md-7">
+          <h3 class="focus-heading">Les océans | <span class="text-muted">Les pouvoirs des océans</span></h3>
+          <p class="lead">Les océans jouent un rôle indispensable pour la survie et le bien-être de tous les organismes vivants, et pour la régulation du climat.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/oceans.jpg" alt="oceans">  
+        </div>
+      </div>
+    </div>
+
+    <!-- Agenda -->
+    <div class="container px-4 py-5" id="Agenda">
+      <h2 class="pb-2 border-bottom text-center accueil">Agenda</h2>  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        <!-- Agenda Journée internationale des forêts -->
+        <div class="col">
+          <a href="https://www.journee-internationale-des-forets.fr/"target="_blank">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/jif_foret.png');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Journée internationale des forêts</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/Logo-natureduc.svg" alt="Natur'éduc" width="32" height="32" class="rounded-circle border border-white bg-dark">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>En forêts</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>21 mars 2022</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
   
+        <!-- Agenda Journée mondiale de l'eau -->
+        <div class="col">
+          <a href="https://www.un.org/fr/observances/water-day/"target="_blank">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/WorldWaterDay2022.webp');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Journée Mondiale de l'eau</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/Logo-natureduc.svg" alt="Natur'éduc" width="32" height="32" class="rounded-circle border border-white bg-dark">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Monde</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>22 mars 2022</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Agenda La Fête de la Nature -->
+        <div class="col">
+          <a href="https://fetedelanature.com/"target="_blank">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/fdn.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">La Fête de la Nature</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/Logo-natureduc.svg" alt="Natur'éduc" width="32" height="32" class="rounded-circle border border-white bg-dark">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>France</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>18 au 22 mai 2022</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </main>   
+  
+  <!-- Pied de page -->
+  <footer class="py-5 mt-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Natureduc">
+            <img src="img/Logo-natureduc.svg" alt="Accueil Natur'éduc" width="40" height="40">
+            <span class="fs-5">Natur'éduc</span>
+          </a>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">Natur'éduc est une association fictive de sensibilisation à la nature des publics scolaires créée par <a href="presentation.html#Equipe">Marion Kozar </a>dans le cadre de l'évaluation d'entraînement HTML CSS Bootstrap de <a href="https://www.studi.com/">Studi.</a></li>
+            <li class="mb-2"><a href="https://github.com/IOn007/Natureduc/blob/HTML/doc/credits.md" target="_blank" rel="credits noopener">Crédits images</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+            <li class="mb-2">Version v1.0</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h4>Accueil</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html#Services">Nos services</a></li>
+            <li class="mb-2"><a href="index.html#Dossiers">Les grands dossiers</a></li>
+            <li class="mb-2"><a href="index.html#Agenda">L'agenda</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h4>Présentation</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="presentation.html#Mission">La mission</a></li>
+            <li class="mb-2"><a href="presentation.html#Equipe">L'équipe</a></li>
+            <li class="mb-2"><a href="presentation.html#Partenaires">Les partenaires</a></li>
+            <li class="mb-2"><a href="presentation.html#Temoignages">Les témoignages</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h4>La Fête de la Nature</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="fete-de-la-nature.html#Programme">Programme</a></li>
+            <li class="mb-2"><a href="fete-de-la-nature.html#Actions">Nos actions</a></li>
+            <li class="mb-2"><a href="fete-de-la-nature.html#Interventions">Interventions</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h4>Liens</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="contact.html">Nous contacter</a></li>
+            <li class="mb-2"><a href="mentions-legales.html">Mentions légales</a></li>
+            <li class="mb-2"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="float-end"><a href="#">
+      <svg class="bi p-2" width="3em" height="3em" alt="Retour vers le haut de page"><use xlink:href="#bi-arrow-bar-up"></use></svg><span class="screen-reader-text">Retour haut de page</span></a>
+  </p>
+  </footer>
+
+  <!-- Import de Bootstrap JS et Popper bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
