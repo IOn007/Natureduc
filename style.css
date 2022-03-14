@@ -60,12 +60,6 @@ a:hover {
   color: #7ac15e;
 }
 
-#homeTitle {
-  visibility: hidden;
-  padding: 0;
-  height: 0;
-}
-
 img.center-cropped {
   -o-object-fit: cover;
      object-fit: cover;
@@ -75,6 +69,19 @@ img.center-cropped {
   /* Center the image within the element */
   height: 100px;
   width: 100px;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 /* Composants
