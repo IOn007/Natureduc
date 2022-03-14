@@ -66,6 +66,17 @@ a:hover {
   height: 0;
 }
 
+img.center-cropped {
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Do not scale the image */
+  -o-object-position: center;
+     object-position: center;
+  /* Center the image within the element */
+  height: 100px;
+  width: 100px;
+}
+
 /* Composants
 -------------------------------------------------- */
 .btn-primary {
@@ -98,6 +109,12 @@ a:hover {
   margin-bottom: 4rem;
 }
 
+.carousel .btn-primary {
+  background-color: rgba(255, 255, 255, 0.123);
+  border-color: white;
+  color: white;
+}
+
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
@@ -115,14 +132,14 @@ a:hover {
   height: 32rem;
 }
 
-.carousel-item .btn-primary {
-  background-color: rgba(255, 255, 255, 0.123);
-  border-color: white;
-  color: white;
-}
-
 /* Offre de services
 -------------------------------------------------- */
+.service h2 {
+  font-weight: 400;
+  color: #00c8ce;
+  font-family: "Fredoka", sans-serif;
+}
+
 .service .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -133,13 +150,7 @@ a:hover {
   margin-left: .75rem;
 }
 
-.service h2 {
-  font-weight: 400;
-  color: #00c8ce;
-  font-family: "Fredoka", sans-serif;
-}
-
-/* Thématiques
+/* Thématiques focus
 ------------------------- */
 .focus-heading {
   font-weight: 300;

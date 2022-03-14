@@ -31,7 +31,7 @@
   <!-- En-tête de la page de présentation -->
   <header>
     <!-- Barre de navigation, qui s'étend à partir des écrans de 768px, fixe lors du déroulé vers le bas de page -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
       <div class="container-fluid">
 
         <!-- Lien vers la page d'accueil  -->
@@ -49,11 +49,11 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link accueil" href="index.html">Accueil</a>
             </li>
             <!-- Ajout d'affordance pour la page actuelle avec active -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" aria-current="page" href="presentation.html" id="prezNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle presentation active" aria-current="page" href="presentation.html" id="prezNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Présentation
               </a>
               <ul class="dropdown-menu" aria-labelledby="prezNavbarDropdown">
@@ -64,7 +64,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="fete-de-la-nature.html" id="fdnNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle feteNature" href="fete-de-la-nature.html" id="fdnNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 La Fête de la Nature
               </a>
               <ul class="dropdown-menu" aria-labelledby="fdnNavbarDropdown">
@@ -74,9 +74,9 @@
                 </ul>
             </li>    
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link faq" href="faq.html">FAQ</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item contact">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -115,7 +115,7 @@
             <p class="lead">La curiosité des élèves et leur participation leur sont demandés tout au long des animations, à la fois pédagogiques et récréatives. Objectif : amener les élèves à prendre conscience de la fragilité des milieux naturels et de l’intérêt de les préserver, en adoptant une attitude citoyenne respectueuse du vivant.</p>
           </div>
           <div class="col-md-5">
-            <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+            <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/adn.jpg" alt="ADN">  
           </div>
         </div>
       </div>     
@@ -132,7 +132,7 @@
             Forte d'une équipe de 150 salariés et bénévoles, Natur'éduc intervient dans chaque département de France métropolitaine et Outre-mer.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+            <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/team.jpg" alt="equipe">  
           </div>
         </div>
       </div>      
@@ -148,7 +148,7 @@
             <p class="lead">Natur'éduc a tissé de nombreux partenariats avec des institutions nationales et internationales. Les programmes sont financés sur plusieurs années permettant la pérénité des projets.</p>
           </div>
           <div class="col-md-5">
-            <svg class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  
+            <img class="focus-img focus-img-lg img-fluid mx-auto rounded-5" width="500" height="500" src="img/partenariat.jpg" alt="partenariats">  
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@
             <div class="py-5">
                 <div class="rounded-5 pb-3 bg-light">
                     <div class="p-3 text-center">“J'ai contacté Natur'éduc pour un projet sur le mares avec ma classe de CM1. Les éléves se sont beaucoup investis et l'intervention était d'excellente qualité”</div>
-                    <div class="d-flex justify-content-center py-2"><img alt="Lea Bouton" width="32" height="32" class="rounded-circle" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"></div>
+                    <div class="d-flex justify-content-center py-2"><img alt="Lea Bouton" class="center-cropped rounded-circle" src="img/lea.webp"></div>
                     <div class="d-flex justify-content-center">Léa Bouton</div>
                     <div class="d-flex justify-content-center">Enseignante de CM1</div>
                 </div>
@@ -172,8 +172,8 @@
           <div class="py-5">
               <div class="rounded-5 pb-3 bg-light">
                   <div class="p-3 text-center">“Nous avons pu bénéficier d'une animation pour les grandes sections de maternelle à l'occasion de la Fête de la Nature. Les enfants se sont bien amusés.”</div>
-                  <div class="d-flex justify-content-center py-2"><img alt="Samir Kaur" width="32" height="32" class="rounded-circle" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"></div>                  
-                  <div class="d-flex justify-content-center">Samir Kaur</div>
+                  <div class="d-flex justify-content-center py-2"><img alt="Ben Héjériz" class="center-cropped rounded-circle" src="img/ben.webp"></div>                  
+                  <div class="d-flex justify-content-center">Ben Héjéri</div>
                   <div class="d-flex justify-content-center">Enseignant de maternelle</div>
               </div>
           </div>
@@ -182,7 +182,7 @@
         <div class="py-5">
             <div class="rounded-5 pb-3 bg-light">
                 <div class="p-3 text-center">“J'ai sollicité Natur'éduc pour selectionner des outils pédagogiques comme supports du programme de science pour les 5e. L'équipe est très agréable et de bon conseil.”</div>
-                <div class="d-flex justify-content-center py-2"><img alt="Jeanne Aligot" width="32" height="32" class="rounded-circle" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"></div>                
+                <div class="d-flex justify-content-center py-2"><img alt="Jeanne Aligot" class="center-cropped rounded-circle" src="img/jeanne.jpg"></div>                
                 <div class="d-flex justify-content-center">Jeanne Aligot</div>
                 <div class="d-flex justify-content-center">Professeur de SVT</div>
             </div>

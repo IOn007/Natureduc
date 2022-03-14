@@ -31,7 +31,7 @@
   <!-- En-tête de la page de fête de la Nature -->
   <header>
     <!-- Barre de navigation, qui s'étend à partir des écrans de 768px, fixe lors du déroulé vers le bas de page -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
       <div class="container-fluid">
 
         <!-- Lien vers la page d'accueil  -->
@@ -49,10 +49,10 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link accueil" href="index.html">Accueil</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="presentation.html" id="prezNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle presentation" href="presentation.html" id="prezNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Présentation
               </a>
               <ul class="dropdown-menu" aria-labelledby="prezNavbarDropdown">
@@ -64,7 +64,7 @@
             </li>
             <!-- Ajout d'affordance pour la page actuelle avec active -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" aria-current="page" href="fete-de-la-nature.html" id="fdnNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle feteNature active" aria-current="page" href="fete-de-la-nature.html" id="fdnNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 La Fête de la Nature
               </a>
               <ul class="dropdown-menu" aria-labelledby="fdnNavbarDropdown">
@@ -74,10 +74,10 @@
                 </ul>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link faq" href="faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link contact" href="contact.html">Contact</a>
             </li>
           </ul>
           <div class="d-flex" id="socials">
