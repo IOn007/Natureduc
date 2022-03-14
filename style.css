@@ -3,7 +3,7 @@
 -------------------------------------------------- */
 :root {
   --bs-primary: #7ac15e;
-  --bs-secondary: #00c8ce;
+  --bs-secondary: #007D83;
 }
 
 /* Global
@@ -30,7 +30,7 @@ header .presentation:hover {
 }
 
 header .accueil:hover, header .contact:hover {
-  background-color: #00c8ce;
+  background-color: #007D83;
   color: white;
   font-weight: 700;
 }
@@ -53,7 +53,7 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  color: #00c8ce;
+  color: #007D83;
 }
 
 a:hover {
@@ -87,8 +87,8 @@ img.center-cropped {
 /* Composants
 -------------------------------------------------- */
 .btn-primary {
-  background-color: #00c8ce;
-  border-color: #00c8ce;
+  background-color: #007D83;
+  border-color: #007D83;
 }
 
 .btn-primary:hover {
@@ -99,7 +99,7 @@ img.center-cropped {
 /* Titres h2 par page
 -------------------------------------------------- */
 .accueil, .contact {
-  color: #00c8ce;
+  color: #007D83;
 }
 
 .presentation, .faq {
@@ -143,7 +143,7 @@ img.center-cropped {
 -------------------------------------------------- */
 .service h2 {
   font-weight: 400;
-  color: #00c8ce;
+  color: #007D83;
   font-family: "Fredoka", sans-serif;
 }
 
@@ -176,7 +176,7 @@ img.center-cropped {
 
 .bi {
   vertical-align: -.125em;
-  fill: #00c8ce;
+  fill: #007D83;
 }
 
 .rounded-5 {

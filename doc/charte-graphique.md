@@ -6,7 +6,7 @@
 
 ## Couleurs ##
 
-bleu = #00c8ce
+bleu = #007D83
 
 vert = #7ac15e
 
